@@ -41,6 +41,12 @@
 	</div>
 </div>
 
+<embed src="http://music.163.com/song/media/outer/url?id=554191055.mp3" hidden="true" autostart="true" loop="true">
+<audio autoplay="autopaly" loop="loop" id="audios">
+<source src="http://music.163.com/song/media/outer/url?id=554191055.mp3" type="audio/mp3">
+</audio>
+	
+
 <script type="text/javascript">
 var offsetX = $("#loveHeart").width() / 2;
 var offsetY = $("#loveHeart").height() / 2 - 55;
@@ -73,6 +79,10 @@ if (!document.createElement('canvas').getContext) {
 	adjustCodePosition();
 	$("#code").typewriter();
 }
+	
+document.addEventListener('touchstart', function() {
+             document.getElementById('audios').play()
+        })
 </script>
 </body>
 </html>
